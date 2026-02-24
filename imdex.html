@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HyperNix — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- animated background -->
+  <div class="bg"></div>
+
+  <!-- particles canvas -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <!-- floating hearts layer -->
+  <div class="hearts" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="brand">
+      <div class="logo">H</div>
+      <div class="brand-text">
+        <div class="name">HyperNix</div>
+        <div class="tag">AI • Shorts • Frontend</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#projects">Проекты</a>
+      <a href="#skills">Навыки</a>
+      <a href="#contact">Связь</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero reveal-item">
+      <div class="hero-left">
+        <div class="chip">⚡ GitHub Pages • Быстрый сайт</div>
+
+        <h1 class="headline">
+          Я делаю <span class="glow">крутые страницы</span><br/>
+          и <span class="glow">AI-контент</span> для шортсов
+        </h1>
+
+        <p class="lead typewriter" data-text="Мини-портфолио: проекты, навыки и контакты. Можно кидать ссылку и обновлять работы."></p>
+
+        <div class="actions">
+          <a class="btn primary" href="#projects">Смотреть проекты</a>
+          <a class="btn ghost" href="#contact">Написать мне</a>
+          <button class="btn ghost" id="themeBtn" type="button" title="Переключить тему">🌙 Тема</button>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span class="n">⚙️</span><div><b>Быстро</b><small>1 страница</small></div></div>
+          <div class="stat"><span class="n">📱</span><div><b>Адаптивно</b><small>телефон/ПК</small></div></div>
+          <div class="stat"><span class="n">✨</span><div><b>Живое</b><small>анимации + JS</small></div></div>
+        </div>
+
+        <div class="hint">
+          <span class="muted">Подсказка:</span> кликни по фону — будут сердечки 😘
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card reveal-item">
+          <div class="card-top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="title">preview.html</span>
+            <span class="live"><i class="live-dot"></i> LIVE</span>
+          </div>
+
+          <div class="card-body">
+            <div class="line"></div>
+            <div class="line w80"></div>
+            <div class="line w65"></div>
+
+            <div class="ticker" aria-hidden="true">
+              <div class="ticker-track">
+                <span>⚡ NEW DROP • AI SHORTS PACK • CLEAN DESIGN • FAST WORK • </span>
+                <span>⚡ NEW DROP • AI SHORTS PACK • CLEAN DESIGN • FAST WORK • </span>
+              </div>
+            </div>
+
+            <div class="pill">YouTube Shorts</div>
+            <div class="pill">AI Prompts</div>
+            <div class="pill">Frontend</div>
+
+            <div class="mini-actions">
+              <button class="mini-btn" id="copyLinkBtn" type="button">Скопировать ссылку</button>
+              <button class="mini-btn" id="likeBtn" type="button">❤ Лайк</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-badge reveal-item">🔥 Made for attention</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal-item">
+      <div class="section-title">
+        <h2>Проекты</h2>
+        <p>Добавляй сюда свои работы: видео, сайты, дизайны.</p>
+      </div>
+
+      <div class="grid">
+        <article class="proj reveal-item">
+          <div class="proj-top">
+            <div class="proj-ico">🎬</div>
+            <div>
+              <h3>AI Shorts Pack</h3>
+              <p>Промпты + оформление для шортсов.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>#veo</span><span>#capcut</span><span>#prompts</span>
+          </div>
+          <a class="link" href="#" onclick="return false;">Скоро: ссылка на видео</a>
+        </article>
+
+        <article class="proj reveal-item">
+          <div class="proj-top">
+            <div class="proj-ico">🧩</div>
+            <div>
+              <h3>Landing Page</h3>
+              <p>Одностраничный сайт с анимациями.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>#html</span><span>#css</span><span>#github-pages</span>
+          </div>
+          <a class="link" href="#" onclick="return false;">Скоро: демо</a>
+        </article>
+
+        <article class="proj reveal-item">
+          <div class="proj-top">
+            <div class="proj-ico">🛒</div>
+            <div>
+              <h3>Mini Shop UI</h3>
+              <p>Дизайн витрины товаров (тренировка).</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>#ui</span><span>#design</span><span>#practice</span>
+          </div>
+          <a class="link" href="#" onclick="return false;">Скоро: скрины</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal-item">
+      <div class="section-title">
+        <h2>Навыки</h2>
+        <p>Полоски двигаются при загрузке. Можно менять проценты.</p>
+      </div>
+
+      <div class="skills reveal-item">
+        <div class="skill"><b>HTML/CSS</b><span class="bar"><i style="width:78%"></i></span></div>
+        <div class="skill"><b>JavaScript</b><span class="bar"><i style="width:55%"></i></span></div>
+        <div class="skill"><b>AI Prompts</b><span class="bar"><i style="width:85%"></i></span></div>
+        <div class="skill"><b>CapCut монтаж</b><span class="bar"><i style="width:70%"></i></span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal-item">
+      <div class="section-title">
+        <h2>Связь</h2>
+        <p>Сделай так, чтобы люди могли быстро открыть твои соцсети.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact-card reveal-item">
+          <h3>Мои ссылки</h3>
+          <p class="muted">Замени на свои:</p>
+          <ul class="list">
+            <li>📌 Instagram:
+              <a class="alink" href="https://instagram.com/alt1nbekov.03" target="_blank" rel="noopener">instagram.com/alt1nbekov.03</a>
+            </li>
+            <li>📌 Telegram:
+              <a class="alink" href="https://t.me/nixshadow_2620" target="_blank" rel="noopener">t.me/nixshadow_2620</a>
+            </li>
+            <li>📌 Телефон номер:
+              <a class="alink" href="+996 226 26-09-12" target="_blank" rel="noopener">+996 226 26-09-12</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-card reveal-item">
+          <h3>Быстрый текст</h3>
+          <p class="muted">Нажми — скопируется:</p>
+          <div class="copybox" id="copyBox">
+            Привет! Я делаю AI-шортсы и стильные сайты. Вот моё портфолио: <b id="siteUrl">(твоя ссылка)</b>
+          </div>
+          <div class="small muted">Нажми на блок, чтобы скопировать.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> HyperNix</span>
+      <span class="sep">•</span>
+      <span class="muted">Сделано на GitHub Pages</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
